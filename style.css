@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7e0e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #e6705e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #130f0f;
+}
+
+#todo-input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #775252;
+    border-radius: 5px;
+}
+
+#add-btn {
+    padding: 10px;
+    margin-left: 120px;
+    margin-top: 10px;
+    border: none;
+    background-color: #080200b1;
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20%;
+
+}
+
+#add-btn:hover {
+    background-color: #9a6d5a;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#todo-list li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
